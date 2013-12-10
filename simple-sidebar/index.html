@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,13 +22,13 @@
   <body>
   
     <div id="wrapper">
+      
       <!-- Sidebar -->
-      <div id="sidebar-wrapper">
+      <div id="sidebar-wrapper"> 
         <ul class="sidebar-nav">
-
           <li id="brand"><a href="#"><img class="img-responsive" src="img/Logo_160x160.png" height="160" width="160" alt="logo"></a></li>
           <!-- <li class="sidebar-brand"><a href="#">Renier Chico</a></li>    -->
-          <li class="active"><a href="#profile">Profile <i class="glyphicon glyphicon-user"></i></a></li>
+          <li class=""><a href="#profile">Profile <i class="glyphicon glyphicon-user"></i></a></li>
           <li><a href="#portafolio">Portafolio<i class="glyphicon glyphicon-folder-open"></i></a></li>
           <li><a href="#skill">Skills <i class="glyphicon glyphicon-bookmark"></i></a></li>
           <li><a href="#">Blog <i class="glyphicon glyphicon-pencil"></i></a></li>
@@ -48,18 +48,19 @@
             <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
             Renier Chico
           </h1>
+
         </div>
         <!-- Quotes -->
         <div class="quotes">
           <h2>
             "La cultura es el pilar fundamental de las Sociedades Desarrolladas"</h2>
         </div>
-        
+      <div class="page-content inset">
+          <div class="row">
       <!-- PROFILE -->
         <div id="profile" class="col-lg-12 titlefirst">
           <h1>Profile</h1>
         </div>
-
         <div class="jumbotron profile">
           <div class="row">
             <div class="col-lg-6 subtitle">
@@ -75,20 +76,26 @@
               <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                   <div class="circulo">
-                   <img class="img-circle img-responsive" src="http://placehold.it/100x100/fffffff/00BFB5&text=1" alt="1">
-                    <h5>Empleado</h5>
+                    <h5>1</h5>
+                    <p>Empleado</p>
+                   <!-- <img class="img-circle img-responsive" src="http://placehold.it/100x100/fffffff/00BFB5&text=1" alt="1"> -->
+                    <!-- <h5>Empleado</h5> -->
                   </div>
                 </div>
                 <div class="col-lg-4">
                   <div class="circulo">
-                    <img class="img-circle img-responsive" src="http://placehold.it/100x100/fffffff/00BFB5&text=2" alt="2">
-                    <h5>Freelancer</h5>
+                    <h5>2</h5>
+                    <p>Freelance</p>
+                    <!-- <img class="img-circle img-responsive" src="http://placehold.it/100x100/fffffff/00BFB5&text=2" alt="2"> -->
+                    <!-- <h5>Freelancer</h5> -->
                   </div>
                 </div>
                 <div class="col-lg-4">
                   <div class="circulo">
-                    <img class="img-circle img-responsive" src="http://placehold.it/100x100/fffffff/00BFB5&text=3" alt="3">
-                    <h5>Emprendedor</h5>
+                    <h5>3</h5>
+                    <p>Emprendedor</p>
+                    <!-- <img class="img-circle img-responsive" src="http://placehold.it/100x100/fffffff/00BFB5&text=3" alt="3"> -->
+                    <!-- <h5>Emprendedor</h5> -->
                   </div>
                 </div>
             </div>
@@ -101,19 +108,23 @@
           <h1>Portafolio</h1>
         </div>
 
-        <div class="jumbotron">
+        <div class="jumbotron projects">
           <div class="row">
-            <div class="col-lg-4 project-image">
+            <div class="col-lg-3 project-image">
               <a href="#">
-              <img class="img-responsive" src="http://placehold.it/500x300/f8f8f8/f0ad4e&text=1" alt="1"></a>
+              <img class="img-responsive" src="img/escuelaweb.png" alt="1"></a>
             </div>
-            <div class="col-lg-4 project-image">
+            <div class="col-lg-3 project-image">
               <a href="#">
-              <img class="img-responsive" src="http://placehold.it/500x300/f8f8f8/f0ad4e&text=2" alt="2"></a>
+              <img class="img-responsive" src="img/factor.jpg" alt="2"></a>
             </div>
-            <div class="col-lg-4 project-image">
+            <div class="col-lg-3 project-image">
               <a href="#">
-              <img class="img-responsive" src="http://placehold.it/500x300/f8f8f8/f0ad4e&text=3" alt="3"></a>
+              <img class="img-responsive" src="img/pap.png" alt="3"></a>
+            </div>
+            <div class="col-lg-3 project-image">
+              <a href="#">
+              <img class="img-responsive" src="img/doktter.png" alt="4"></a>
             </div>
         </div>
       </div>
@@ -263,10 +274,8 @@
           <h1>Contacto</h1>
         </div>
         
-          <div class="col-lg-12">
-            <div class="row">
+          <div class="mapa col-lg-12">
               <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v3/racs182.gfjkni0h/mm/index.html?secure=1#13/10.5017/-66.8788'></iframe>
-            </div>
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 ubicacion">
               <p>Caracas, Venezuela</p>
               <form action="" role="form">
@@ -283,10 +292,13 @@
               </form>
             </div>
         </div>
- 
+
+        <!-- FOOTER -->
+        <div class="row">
         <footer class="footer">
           <h5>Todos los derechos reservados</h5>
         </footer>
+        </div>
 
             <!-- Keep all page content within the page-content inset div! -->
             <!-- <div class="page-content inset">
@@ -313,7 +325,10 @@
             </div>
           </div>
       </div> -->
-    <!-- </div> -->
+    </div>
+    </div>
+    </div>
+    </div>
 	
     <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
