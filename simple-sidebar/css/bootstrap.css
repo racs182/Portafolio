@@ -4924,7 +4924,8 @@ a.list-group-item.active > .badge,
   line-height: 2.1428571435;
   color: inherit;
   background-color: #ffffff;
-  border-top: 4px solid #49D5AE;
+  border-top: 4px solid #63bdf2;
+  /*#49D5AE;*/
    /*#d8d8d8;*/
 }
 
