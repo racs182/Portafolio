@@ -15,7 +15,16 @@
   <link href="css/simple-sidebar.css" rel="stylesheet">
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'></head>
+  <link href='http://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'>
+  
+  <!-- script -->
+    <!-- Make sure you've included jQuery before jquery-github-widget.js. -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <!-- Load jquery-github-widget default theme, or customize one of your own. Go ahead, it's well commented :D. -->
+  <link href="css/simple-sidebar.css" media="screen" rel="stylesheet" type="text/css">
+  <!-- Load jquery-github-widget.js. -->
+  <script src="js/jquery-github-widget.js" type="text/javascript"></script>
+</head>
 
 <body>
 
@@ -90,7 +99,7 @@
       </h2>
     </div>
     <div class="page-content inset">
-      <div class="row">
+      <div class="col-lg-12"> <!-- ojo antes habia row -->
         <!-- PROFILE -->
         <div id="profile" class="col-lg-12 titlefirst">
           <h1>Profile</h1>
@@ -413,20 +422,34 @@
 
   <div class="jumbotron">
     <div class="row">
-      <div class="col-lg-4 project-image">
-        <a href="#">
-          <img class="img-responsive" src="http://placehold.it/500x300/f8f8f8/f15d22&text=1" alt="1"></a>
+    
+      <!-- API Google+ -->
+      <div class="col-lg-3">    
+        <!-- Place this tag where you want the widget to render. -->
+        <div class="g-person" data-width="300" data-href="//plus.google.com/114670137727158112278" data-rel="author"></div>
       </div>
-      <div class="col-lg-4 project-image">
-        <a href="#">
-          <img class="img-responsive" src="http://placehold.it/500x300/f8f8f8/f15d22&text=2" alt="2"></a>
+
+      <!-- Plugin GitHub -->
+      <div class="col-lg-3">
+          <div id="github-widget-holder"></div>
+          <script>
+            $('#github-widget-holder').github_widget({
+            user : 'racs182',        // (required)  your github username
+          });
+          </script>
       </div>
-      <div class="col-lg-4 project-image">
-        <a href="#">
-          <img class="img-responsive" src="http://placehold.it/500x300/f8f8f8/f15d22&text=3" alt="3"></a>
+
+      <!-- Widget Twitter -->
+      <div class="col-lg-3">
+          <a class="twitter-timeline" href="https://twitter.com/racs182" data-widget-id="410836440784723968">Tweets por @racs182</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
-    </div>
-  </div>
+      <div class="col-lg-3">
+        <img src="http://placehold.it/300x390">
+      </div>
+    
+    </div> <!-- End row -->
+  </div> <!-- End jumbotron -->
 
   <!-- CONTACT -->
   <div id="contact" class="col-lg-12 titlefirst">
@@ -474,6 +497,15 @@
             e.preventDefault();
             $("#wrapper").toggleClass("active");
         });
-        </script>
+    </script>
+    <!-- Place this tag after the last widget tag. -->
+    <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/platform.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+    
 </body>
 </html>
